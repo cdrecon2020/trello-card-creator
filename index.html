@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Trello Card Creator</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-	<main class="container">
-		<h1>Trello Card Creator</h1>
-		<form action="" method="post" class="card-creator">
-		<label for="project"><input type="text" name="project">Project</label>
-		<label for="description">
-			<textarea type="text" name="project">
-			</textarea>Description
-		</label>
-		<label for="due-date"><input type="date" name="due-date">Due Date</label>
-		<select name="department" id="department">
-			<option value="first" selected>First</option>
-			<option value="second">Second</option>
-			<option value="third">Third</option>
-			<option value="fourth">Fourth</option>
-			<option value="fifth">Fifth</option>
-			<option value="sixth">Sixth</option>
-		</select>
-		<label for="subscribe"><input type="checkbox" name="subscribe">Subscribe Me</label>
-		<button type="submit" id="submit-button" class="submit">Submit</button>
-		</form>
-	</main>
-	
-	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="https://api.trello.com/1/client.js?key=720ffeb378d4ec592d4c2ffa9b8f9dc7"></script>
-	<script type="text/javascript" src="app.js"></script>	
-</body>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Trello Card Creator</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+
+	<body>
+		<main class="container">
+			<h1>Trello Card Creator</h1>
+			<form action="" method="post" class="card-creator">
+				<label for="project"><input type="text" name="project">Project</label>
+				<label for="description">
+					<textarea type="text" name="project">
+					</textarea>Description
+				</label>
+				<label for="due-date"><input type="date" name="due-date">Due Date</label>
+				<label for="department">
+					<select name="department" id="department">
+						<option value="first" selected>First</option>
+						<option value="second">Second</option>
+						<option value="third">Third</option>
+						<option value="fourth">Fourth</option>
+						<option value="fifth">Fifth</option>
+						<option value="sixth">Sixth</option>
+					</select>
+				Department
+				</label>
+				
+				<label for="subscribe"><input type="checkbox" name="subscribe">Subscribe Me</label>
+				<button type="submit" id="submit-button" class="submit">Submit</button>
+			</form>
+		</main>
+		
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="https://api.trello.com/1/client.js?key=720ffeb378d4ec592d4c2ffa9b8f9dc7"></script>
+		<script type="text/javascript" src="app.js"></script>	
+	</body>
+
 </html>

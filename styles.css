@@ -1,4 +1,4 @@
-* {
+*, *:before, *:after {
 	box-sizing: border-box;
 }
 
@@ -15,6 +15,8 @@ h1 {
 .card-creator {
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
 	width: 90%;
 	max-width: 400px;
 	margin: auto;
@@ -23,9 +25,21 @@ h1 {
 	padding: 1rem;
 }
 
-.card-creator input {
-	max-width: 200px;
+.card-creator label,
+.card-creator select,
+.card-creator textarea {
+	margin: 1rem 1rem 0 0;
 }
+
+.card-creator input {
+	margin: 0 1rem 0 0;
+}
+
+.card-creator textarea {
+	min-height: 6rem;
+}
+
+
 
 button.submit {
 	background-color: #F68E9D;
