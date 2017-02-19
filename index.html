@@ -7,23 +7,22 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<div class="container">
+	<main class="container">
 		<h1>Trello Card Creator</h1>
 		<form action="" method="post" class="card-creator">
 		<label for="project"><input type="text" name="project">Project</label>
 		<label for="description">
 			<textarea type="text" name="project">
-			
 			</textarea>Description
 		</label>
 		<label for="due-date"><input type="date" name="due-date">Due Date</label>
 		<label for="subscribe"><input type="checkbox" name="subscribe">Subscribe Me</label>
-		<button type="submit" class="submit">Submit</button>
+		<button type="submit" id="submit-button" class="submit">Submit</button>
 		</form>
-
-	</div>
+	</main>
 	
-
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="https://api.trello.com/1/client.js?key=720ffeb378d4ec592d4c2ffa9b8f9dc7"></script>
 	<script type="text/javascript" src="app.js"></script>	
 </body>
 </html>
