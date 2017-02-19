@@ -31,6 +31,8 @@ h1 {
 	margin: 1rem 1rem 0 0;
 }
 
+
+
 .card-creator input {
 	margin: 0 1rem 0 0;
 }
@@ -39,9 +41,7 @@ h1 {
 	min-height: 6rem;
 }
 
-
-
-button.submit {
+.card-creator button {
 	background-color: #F68E9D;
 	color: white;
 	width: 80%;
