@@ -1,7 +1,8 @@
 // trello api key 
 // 720ffeb378d4ec592d4c2ffa9b8f9dc7
 
-var cardButton = $('#card-button');
+const cardButton = $('#card-button');
+const project = $('#project');
 
 // authentication
 
@@ -27,13 +28,14 @@ Trello.authorize({
 
 function makeCard() {
 	var myList = '58956480a99fc2e3a97efe3d';
+  
 	var creationSuccess = function(data) {
   		console.log('Card created successfully. Data returned:' + JSON.stringify(data));
 	};
-  
-  
+ 
+
 	var newCard = {
-  		name: 'New Test Card', 
+  		name: 'test', 
   		desc: 'This is the description of our new card.',
   		// Place this card at the top of our list 
   		idList: myList,
@@ -42,7 +44,7 @@ function makeCard() {
 	Trello.post('/cards/', newCard, creationSuccess);
 };
 
-submitButton.click(makeCard);
+cardButton.click(makeCard);
 
 
 
